@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314393010080",
+    "project_id": "yazlab3-d740c",
+    "storage_bucket": "yazlab3-d740c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314393010080:android:2bc32f84f08e584ded8ec5",
+        "android_client_info": {
+          "package_name": "com.emine.harrypottermemorycard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314393010080-9m332vtb49as96anatca485tescunjd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBcQf6pauUVZ1g_pV1M8WACQLVtjjG_nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314393010080-9m332vtb49as96anatca485tescunjd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

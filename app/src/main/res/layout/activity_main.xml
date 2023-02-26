@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textEnd"
+
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="580dp"
+        android:layout_height="750dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hogwarts"
+        tools:layout_editor_absoluteX="-32dp" />
+
+    <EditText
+        android:id="@+id/textmemorycard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="122dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="MEMORY  CARD GAME"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eskisifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Şifreyi giriniz."
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@+id/k_uyemail"
+        app:layout_constraintTop_toBottomOf="@+id/k_uyemail" />
+
+
+    <TextView
+        android:id="@+id/kullaniciuyebilgilendirme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:drawableLeft="@drawable/done"
+        android:text="Üye olarak veya giriş yaparak kullanım ve gizlilik koşullarını kabul etmiş sayılırsınız."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/k_uyemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="E-mail adresi giriniz."
+        app:layout_constraintStart_toStartOf="@+id/textmemorycard"
+        app:layout_constraintTop_toBottomOf="@+id/textmemorycard" />
+
+    <Button
+        android:id="@+id/sifredegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_500"
+        android:text="ŞİFRE DEĞİŞTİR"
+        android:textColorHint="#1C1B1B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciuyebilgilendirme"
+        app:layout_constraintEnd_toEndOf="@+id/kullaniciuyebilgilendirme" />
+
+    <Button
+        android:id="@+id/kullanicigris"
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+
+        android:layout_marginStart="66dp"
+        android:background="@drawable/buttonarkaplan"
+        android:hint="GİRİŞ YAP"
+        android:padding="10dp"
+        android:text="GİRİŞ YAP"
+        android:textColorHint="@color/buttonColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/kullaniciyeniuyelik"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kullaniciyeniuyelik"
+        android:layout_width="wrap_content"
+
+        android:layout_height="54dp"
+
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/buttonarkaplan"
+        android:hint="GİRİŞ YAP"
+        android:padding="10dp"
+        android:text="YENİ ÜYELİK"
+        android:textColorHint="@color/buttonColor"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciuyebilgilendirme"
+        app:layout_constraintStart_toEndOf="@+id/kullanicigris"
+        app:layout_constraintTop_toBottomOf="@+id/eskisifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

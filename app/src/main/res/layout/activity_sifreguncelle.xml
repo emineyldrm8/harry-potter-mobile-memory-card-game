@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textEnd"
+
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="580dp"
+        android:layout_height="750dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:srcCompat="@drawable/hogwarts"
+        tools:layout_editor_absoluteX="-53dp" />
+
+    <EditText
+        android:id="@+id/eskisifre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="116dp"
+        android:ems="10"
+        android:hint="Mevcut şifreyi giriniz."
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/yenisifre"
+        app:layout_constraintEnd_toEndOf="@+id/yenisifre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/k_uyemail" />
+
+    <TextView
+        android:id="@+id/kullaniciuyebilgilendirme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@drawable/done"
+        android:text="Üye olarak veya giriş yaparak kullanım ve gizlilik koşullarını kabul etmiş sayılırsınız."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/k_uyemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="E-mail adresi giriniz."
+        app:layout_constraintBottom_toTopOf="@+id/eskisifre"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/sifredegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_500"
+        android:text="ŞİFRE GÜNCELLE"
+        android:textColorHint="#1C1B1B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciuyebilgilendirme"
+        app:layout_constraintStart_toStartOf="@+id/kullaniciuyebilgilendirme" />
+
+    <EditText
+        android:id="@+id/yenisifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Yeni şifreyi giriniz."
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/sifredegis"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="50dp"
+        android:text="ŞİFRE GÜNCELLEME SAYFASI"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/k_uyemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="17dp"
+        android:text="HESABINIZ VAR MI TIKLAYIN!"
+        app:layout_constraintBottom_toTopOf="@+id/yenisifre"
+        app:layout_constraintStart_toStartOf="@+id/yenisifre" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="42dp"
+        android:text="ANA SAYFAYA DÖNÜN"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciuyebilgilendirme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sifredegis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
