@@ -1,31 +1,31 @@
 # harry-potter-mobile-memory-card-game
 harry potter mobile memory card game
 # ÖZET
-Bu projede Android ve bulut teknolojileri kullanılarak bir   hafıza   oyunu   tasarlanacaktır.Oyuncu   tarafından   sec¸ilen iki   kart   es¸les¸tig˘inde   oyuncu   belirlenen   o¨zelliklere   go¨re puan   kazanır.Eg˘er   oyuncu   yanlıs¸   ve   es¸les¸meyen   iki   kart sec¸erse   bu   kartlar   eski   hallerine   geri   do¨ner   ve   oyuna devam edilir.Proje sonucunda beklenen oyuncu ve kart bilgilerinin   bulutta   tutulması,giris¸   yapmak   ic¸in   bir   giris¸ ekranı,oyunun oyuncu sayısının ve zorluk seviyesinin sec¸ileceg˘i   bir   ekran   ve   seviyelere   go¨re   olus¸turulmus¸   kart oyunu olus¸turulmasıdır.Toplamda 44 adet kart vardır.Bu kartlar seviyelerine,gruplarına go¨re ayrılmalıdır
+Bu projede Android ve bulut teknolojileri kullanılarak bir   hafıza   oyunu   tasarlanacaktır.Oyuncu   tarafından   seçilen iki   kart   eşeştiğinde   oyuncu   belirlenen   özelliklere   göre puan   kazanır.Eğer   oyuncu   yanlış   ve   eşleşmeyen   iki   kart seçerse   bu   kartlar   eski   hallerine   geri   döner   ve   oyuna devam edilir.Proje sonucunda beklenen oyuncu ve kart bilgilerinin   bulutta   tutulması,giriş   yapmak   için   bir   giriş ekranı,oyunun oyuncu sayısının ve zorluk seviyesinin seçileceği   bir   ekran   ve   seviyelere   göre   oluşturulmuş   kart oyunu oluşturulmasıdır.Toplamda 44 adet kart vardır.Bu kartlar seviyelerine,gruplarına göre ayrılmalıdır
 # GİRİŞ
 Projede kullanılacak kartlar
-”Gryffindor,Slytherin,Ravenclaw,Hufflepuff” olmak uzere ¨
-4 eve ayrılmıs¸tır.Her kartın bir ismi ve puanı vardır.Bu
-bilgiler oyuncu dogru kartları es¸lets¸tirdi ˘ ginde yapılacak puan ˘
-hesabı ic¸in kullanılacaktır.Toplamda 44 adet kart bulutta
+”Gryffindor,Slytherin,Ravenclaw,Hufflepuff” olmak üzere
+4 eve ayrılmıştır.Her kartın bir ismi ve puanı vardır.Bu
+bilgiler oyuncu dogru kartları eşleştirdiğinde yapılacak puan 
+hesabı için kullanılacaktır.Toplamda 44 adet kart bulutta
 tutulmalıdır.Kartlarda kullanılacak resimler base64 formatına
-c¸evrilecektir.Bulut platformu olarak Google,Amazon gibi
+çevrilecektir.Bulut platformu olarak Google,Amazon gibi
 platformlar kullanılabilir.
-Oyun giris¸ ekranı kullanıcı adı ve s¸ifre ile giris¸ yapmayı
-gerektirir.Oyun ekranında ise ”Tekli Oyuncu” ”C¸ oklu
-Oyuncu” olmak uzere sec¸im yapılabilir.Aynı s¸ekilde 2x2,4x4 ¨
-veya 6x6 olmak uzere oyun zorluk seviyesi de sec¸ilebilir. ¨
-Oyun ic¸inde kartlar ilk bas¸ta rastgele dagıtılır.Oyuncu ˘
-es¸les¸en kartları bulmak ic¸in tekli oyuncu da 45 c¸oklu oyuncu
-da 60 saniye sureye sahiptir.Bu s ¨ ure boyuncu belirlenen ¨
-s¸arkı arka fonda c¸alacak,dogru es¸les¸mede kullanıcıyı tebrik ˘
-eden ve yanlıs¸ es¸les¸mede kullanıcıyı uyaran ayrı bir muzik ¨
-c¸alacaktır.Oyun skoru ise sec¸ilen kartların ozelliklerine,bitis¸ ¨
-suresine g ¨ ore hesaplanır. 
+Oyun giriş ekranı kullanıcı adı ve şifre ile giriş yapmayı
+gerektirir.Oyun ekranında ise ”Tekli Oyuncu” ”Çoklu
+Oyuncu” olmak uzere seçim yapılabilir.Aynı şekilde 2x2,4x4 ¨
+veya 6x6 olmak uzere oyun zorluk seviyesi de seçilebilir. ¨
+Oyun içinde kartlar ilk başta rastgele dagıtılır.Oyuncu 
+eşlelen kartları bulmak için tekli oyuncu da 45 çoklu oyuncu
+da 60 saniye süreye sahiptir.Bu süre boyunca belirlenen
+şarkı arka fonda çalacak,doğru eşleşmede kullanıcıyı tebrik 
+eden ve yanlış eşleşmede kullanıcıyı uyaran ayrı bir müzik
+çalacaktır.Oyun skoru ise seçilen kartların özelliklerine,bitiş
+süresine göre hesaplanır. 
 
 # YÖNTEM
 
-˙Ilk     olarak     projeye     firebase     u¨zerindeki     is¸lemleri yaparak bas¸ladık.44 adet kartı ve bu kartların isim- lerini,o¨zelliklerini,puanlarını  firebase’de  tutuyoruz.Firebase’e eklerken resimleri ilk bas¸ta base64 formatına c¸eviriyoruz.Daha sonra    ise    tekrardan    bunları    resime    c¸evirerek    bulutta tutuyoruz.Oyun     esnasında     resimler     firebase     u¨zerinden c¸ekiliyor.Aynı   s¸ekilde   kullanıcı   adlarını   ve   s¸ifreleri   de bulut  u¨zerinde  tutuyoruz.Kullanıcının  bu  o¨zellikleri  bulutta olus¸turulmus¸ bir veritabanında tutuluyor.Oyunda kullanılacak bilgilerin  hepsi  firebase  u¨zerinde  tutuluyor  ve  oyun  bas¸ladıg˘ı zaman bu bilgilerin hepsi firebase’den geliyor.
+İlk olarak  projeye firebase üzerindeki işlemleri yaparak başladık.44 adet kartı ve bu kartların isimlerini,özelliklerini,puanlarını  firebase’de  tutuyoruz.Firebase’e eklerken resimleri ilk bas¸ta base64 formatına c¸eviriyoruz.Daha sonra    ise    tekrardan    bunları    resime    c¸evirerek    bulutta tutuyoruz.Oyun     esnasında     resimler     firebase     u¨zerinden c¸ekiliyor.Aynı   s¸ekilde   kullanıcı   adlarını   ve   s¸ifreleri   de bulut  u¨zerinde  tutuyoruz.Kullanıcının  bu  o¨zellikleri  bulutta olus¸turulmus¸ bir veritabanında tutuluyor.Oyunda kullanılacak bilgilerin  hepsi  firebase  u¨zerinde  tutuluyor  ve  oyun  bas¸ladıg˘ı zaman bu bilgilerin hepsi firebase’den geliyor.
 Daha sonra oyunun giris¸ ekranını yaptık.Giris¸ ekranında
 kullanıcı adı ve s¸ifre dogru girildi ˘ ginde kullanıcı ˘
 oyun ozelliklerini sec¸ece ¨ gi ekrana y ˘ onlendiriliyor.E ¨ ger ˘
